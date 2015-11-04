@@ -64,8 +64,8 @@ P\left\{Y=1\mid{}X=1\right\}=h&=&1-\Phi\left(k-d\right)\\
 \end{eqnarray*}
 
 \begin{figure}
-    \includegraphics[width=1\textwidth]{Fig1_3.pdf}
-    \caption{Illustrations of the regular YN model (left panel) and our modified YN model with ambivalent or missing responses (right panel). In both panels, the two curves represent the probability distributions of observations from the two stimulus classes. The distance between the means of these distributions, $d$, is a measure of sensitivity. Under the regular YN model, the distance between $\frac{d}{2}$ and $k$ is a measure of bias, $c$. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively), and since $f$ and $h$ can be estimated directly from the data in an experiment, so too can $d$ and $c$. Under the modified YN model, $d$ can be estimated as before. However, the measure of bias, $\lambda$, requires an additional probability, $g$, to be estimated from the data as well. The model also contains a measure of decision uncertainty, $u$.}
+    \includegraphics[width=1\textwidth]{Fig1_4.pdf}
+    \caption{Illustrations of the regular YN model (left panel) and the modified YN model (right panel). In both panels, the two curves represent the probability distributions of observations from the two stimulus classes. Under the regular model, the distance between the means of the distributions, $d$, is a measure of sensitivity, and the distance between $\frac{d}{2}$ and $k$, denoted $c$, is a measure of bias. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively). Under the modified model, $d$ is again an appropriate measure of sensitivity and can be estimated in the same way. However, an appropriate measure of bias, $\lambda$, is calculated differently, and requires an additional probability, $g$, to be estimated from the data. The modified model contains an additional measure, $u$, that represents uncertainty or ambivalence in the decision process.}
     \label{fig:Figure1}
 \end{figure}
 
@@ -81,7 +81,7 @@ Crucially, because $f$ and $h$ can be estimated directly from the data in an exp
 
 It is worth noting that the assumptions of the regular YN model can be relaxed in various ways. For example, it is possible for the probability distributions of $\Psi_{X=0}$ and $\Psi_{X=1}$ to be non-Gaussian, or have different variances. Indeed, work on recognition memory has consistently reported phenomena that are inconsistent with the regular YN model but can be explained by assuming unequal variances \parencite{Wixted2007, Yonelinas2007} or by assuming that $\Psi_{X=0}$ and $\Psi_{X=1}$ are drawn from mixtures of latent distributions \parencite{decarlosignal2002}. Another possibility is to allow $k$ to vary across trials rather than remaining constant over trials \parencite{cabreraseparating2015}. However, relaxing any of these assumptions means that the YN model is no longer exactly identified (i.e., the number of independent unknown variables and the number of known variables are not the same), so consequently cannot be solved for $d$ and $c$. For the purposes of this article, we adhere to these assumptions, but note that future work could extend our models to incorporate unequal variance, non-Gaussian decision variables, and variable criteria.
 
-\section{YN model with ambivalent or missing responses}
+\subsection{YN model with ambivalent or missing responses}
 One can account for ambivalent or missing responses with two modifications to the regular YN model, as shown in the right panel of Fig.~\ref{fig:Figure1}. The first modification is that the model contains two criteria, denoted $a$ and $b$. The second modification is to the decision rule. Let $Z$ denote the subject's response. When $Z=0$, the subject responds that the stimulus is in the first class. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject responds that the stimulus is in the second class. This decision rule can be written as
 \begin{eqnarray*}
 &Z=0\textrm{ if }\Psi<a\textrm{,}\\
@@ -110,36 +110,58 @@ Like $f$ and $h$, $g$ can be estimated directly from the data---it is proportion
 \end{eqnarray}The model allows a third psychologically meaningful measure to be calculated from the data. The distance between the two criteria, denoted $u$, represents the degree of uncertainty or ambivalence within the decision process. We therefore refer to it as the ``index of uncertainty.'' This measure can be estimated from the data using the equation
 \begin{eqnarray}
 \hat{u}&=&\Phi^{-1}\left(\hat{f}+\hat{g}\right)-\Phi^{-1}\left(\hat{f}\right)\textrm{.}
-\end{eqnarray}Note that, in the special case where no ambivalent or missing responses were observed during an experiment, our model reduces to the regular YN model: $\lambda$ is equivalent to $c$ and can be calculated using Eq. 2, and $u=0$.
-\section{Regular 2AFC model}
-The traditional conceptualization of the equal-variance Gaussian SDT model for 2AFC experiments involves the so-called ``differencing'' decision rule \parencite[see][]{Macmillan2005}. An alternative approach, described by \textcite{decarloon2012}, does not involve differencing. The non-differencing approach is outlined below.
-
-On each trial in a 2AFC experiment, the subject is presented with two stimuli per trial. The stimuli are drawn from two different stimulus classes, and presented in random order. Let $X$ denote the presentation order of the stimuli. When $X=0$, the first stimulus is drawn from the first class, and the second stimulus is drawn from the second class. When $X=1$, the first stimulus is drawn from the second class, and the second stimulus is drawn from the first class. The subject makes two observations per trial, $\Psi_0$ and $\Psi_1$, corresponding to the first and second stimuli, respectively, and then chooses whichever stimulus had the larger corresponding observation. In order to account for bias, a quantity is always added to the first observation prior to the decision being made \parencite[see][]{decarloon2012}. Let $Y$ represent the subject's response to a trial. When $Y=0$, the subject chooses the first stimulus, and when $Y=1$, the subject chooses the second stimulus. This decision rule can be expressed formally as
+\end{eqnarray}Note that, in the special case where $u=0$, the modified model reduces to the regular YN model: $\lambda$ is equivalent to $c$, and can be calculated using Eq. 2, as usual.
+\subsection{Regular 2AFC model}
+The regular YN model can be modified to account for data from 2AFC experiments, which allows the calculation of measures of sensitivity and bias \parencite[][]{decarloon2012}. On each trial in a 2AFC experiment, the subject is presented with two stimuli per trial. The stimuli are drawn from two different stimulus classes, and presented in random order. Let $W$ denote the presentation order of the stimuli. When $W=0$, the first stimulus is drawn from the first class, and the second stimulus is drawn from the second class. When $W=1$, the first stimulus is drawn from the second class, and the second stimulus is drawn from the first class. The subject makes two observations per trial, $\Psi_0$ and $\Psi_1$, corresponding to the first and second stimuli, respectively, and then chooses whichever stimulus had the larger corresponding observation. In order to account for bias, a quantity is always added to the first observation prior to the decision being made \parencite[see][]{decarloon2012}. Let $Y$ represent the subject's response to a trial. When $Y=0$, the subject chooses the first stimulus, and when $Y=1$, the subject chooses the second stimulus. This decision rule can be expressed formally as
 \begin{eqnarray*}
 &Y=0\textrm{ if }\Psi_0+l>\Psi_1\textrm{,}\\
 &Y=1\textrm{ if }\Psi_0+l\le\Psi_1\textrm{,}
-\end{eqnarray*}where $l$ is a measure of bias. The model is summarized in the top panels of Fig.~2. The top left panel of the figure also shows an example observation of the first stimulus on a trial where this stimulus was drawn from the second class (i.e., $X=0$). The green shaded region represents the conditional probability that $Y=1$ given $X=0$, which we again label as a false alarm. The figure makes it clear that, unlike under the YN model, the probability of making a false alarm varies from trial to trial depending on the value of the first observation. Specifically,
-
-
-When $X=0$, the first observation is drawn from a standard normal distribution, $\Psi_{0}\sim{}\mathcal{N}\left(0,1\right)$, and the second observation is drawn from a normal distribution with mean $d$, $\Psi_{1}\sim{}\mathcal{N}\left(d,1\right)$.
-When $X=1$, the presentation order of the stimuli is switched, so that $\Psi_{0}\sim{}\mathcal{N}\left(d,1\right)$ and $\Psi_{1}\sim{}\mathcal{N}\left(0,1\right)$. The subject then chooses whichever stimulus had the larger corresponding observation. Let $Y$ represent the subject's response to a trial. When $Y=0$, the subject chooses the first stimulus, and when $Y=1$, the subject chooses the second stimulus. This decision rule can be expressed formally as
+\end{eqnarray*}where $l$ is a measure of bias. The model is summarized in the top panels of Fig.~2. The top-left and top-right panels are illustrations of two different trials. In both of them, the subject has just made an observation of the first stimulus. The left panel shows a trial where this stimulus was drawn from the first class (i.e., $W=0$). The blue shaded region in this figure represents the conditional probability $P\left\{Y=1\mid{}W=0\right\}$, which for convenience we arbitrarily label as a false alarm, $f$. The panel makes it clear that, unlike under the YN model, the probability of making a false alarm varies from trial to trial depending on the value of $\Psi_0$. Specifically,
 \begin{eqnarray*}
-&Y=0\textrm{ if }\Psi_0+c>\Psi_1\textrm{,}\\
-&Y=1\textrm{ if }\Psi_0+c\le\Psi_1\textrm{,}
-\end{eqnarray*}where $c$, as before, is a measure of bias \parencite[see][]{decarloon2012}. The model is summarized in the top panels of Fig. 2. The top left-hand panel of the figure also shows an example observation of the first stimulus on a trial where this stimulus was drawn from the second class (i.e., $X=0$). The green shaded region represents the conditional probability that $Y=1$ given $X=0$, which we again label as a false alarm. The figure makes it clear that, unlike under the YN model, the probability of making a false alarm varies from trial to trial depending on the value of the first observation. Specifically,
+P\left\{Y=1\mid{}W=0,\Psi_0=x\right\}=1-\Phi\left(x+l\right)
+\end{eqnarray*} where $x\sim\mathcal{N}\left(d,1\right)$. The corresponding equation not conditional on $x$ is
 \begin{eqnarray*}
-P\left\{Y=1\mid{}X=0, \Psi_0=x\right\}=\Phi\left(  \right)\textrm{,}
-\end{eqnarray*}where $x$ is a realization of $\Psi_0$ that is drawn from the standard normal distribution. The corresponding equation not conditional on $x$ can be found by integrating over $x$:
-Conveniently, equations of this kind can be simplified:
-The top right-hand panel of Fig. 2 shows an example observation of the first stimulus when $X=1$. The blue shaded region represents the conditional probability that $Y=1$ given $X=1$, which we again label as a hit. The simplified equation for this probability is found as follows.
-The maximum-likelihood estimate for $d$ under the regular 2AFC model is found using the equation
-and the equation for the maximum-likelihood estimate for $c$ is.
-Interestingly, Eq X does not appear in any introductory SDT textbooks, and is rarely used in empirical studies. In fact,\parencite{Macmillan2005} actually recommend using Eq. X to estimate bias for 2AFC experiments (p. XXX). This is probably due in part to the fact that historically the prevailing---but somewhat erroneous---idea has been that subjects tend to be less biased 2AFC experiments than in YN experiments (for a discussion of this issue, see XXX). Nevertheless, since the difference between Eqs X and Y is a constant, there is unlikely to be many issues in interpreting previous studies that followed \parencite{Macmillan2005}'s advice.
-\section{2AFC model with ambivalent or missing responses}
-The lower panels of Fig. 2 illustrate the modifications necessary to produce the 2AFC model with ambivalent or missing responses. As with the YN model, this model uses two criteria rather than one, and the decision rule is re-written as follows:
+P\left\{Y=1\mid{}W=0\right\}=f=\int\!\left[1-\Phi\left(x+l\right)\right]\phi\left(x-d\right)\textrm{d}x\textrm{,}
+\end{eqnarray*} where $\phi\left(\cdot\right)$ is the normal probability density function. Conveniently, equations of this kind can be simplified, leading to
 \begin{eqnarray*}
-&Y=0\textrm{ if }\Psi_0+c>\Psi_1\textrm{,}\\
-&Y=1\textrm{ if }\Psi_0+c\le\Psi_1\textrm{,}
+f=\Phi\left(\frac{-d-l}{\sqrt{2}}\right)\textrm{.}
 \end{eqnarray*}
+The top-right panel of Fig.~2 shows a trial where the first stimulus was drawn from the second class (i.e., $W=1$). The green shaded region, $P\left\{Y=1\mid{}W=1\right\}$ or $h$, is given by the following equations:
+\begin{eqnarray*}
+P\left\{Y=1\mid{}W=1,\Psi_0=y\right\}=1-\Phi\left(y+l-d\right)\textrm{,}
+\end{eqnarray*} where $y\sim\mathcal{N}\left(0,1\right)$; and
+\begin{eqnarray*}
+P\left\{Y=1\mid{}W=1\right\}=h&=&\int\!\left[1-\Phi\left(y+l-d\right)\right]\phi\left(y\right)\textrm{d}y\\
+&=&\int\!\Phi\left(d-y-l\right)\phi\left(y\right)\textrm{d}y\\
+&=&\Phi\left(\frac{d-l}{\sqrt{2}}\right)\textrm{.}
+\end{eqnarray*}
+The maximum-likelihood estimate of $d$ under the regular 2AFC model is therefore given by
+\begin{eqnarray}
+\hat{d}=\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(\hat{h}\right)-\Phi^{-1}\left(\hat{f}\right)\right]\textrm{,}
+\label{eq5}
+\end{eqnarray} and the maximum-likelihood estimate of $l$ is given by\footnote{Equation~6 does not appear in previous introductions to SDT, despite entire chapters of authoritative textbooks being devoted to 2AFC \parencite[e.g.,][]{Green1966, Macmillan2005}. In fact, \citeauthor{Macmillan2005} suggest (p.~170), ``For measuring response bias [in 2AFC], the methods [for YN] are entirely adequate. No $\sqrt{2}$ adjustment is necessary, because (as the reader may not be surprised to learn) bias in one task cannot be predicted from bias in the other.''}
+\begin{eqnarray}
+\hat{l}=-\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(\hat{h}\right)+\Phi^{-1}\left(\hat{f}\right)\right]\textrm{.}
+\label{eq6}
+\end{eqnarray}
 
-\end{document}
+\subsection{2AFC model with ambivalent or missing responses}
+As before, two modifications are required to allow ambivalent or missing responses in 2AFC experiments. The first is to include two additional variables, $a$ and $b$. The second is to modify the decision rule. Let $Z$ denote the subject's response. When $Z=0$, the subject chooses the first stimulus. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject chooses the second stimulus. The decision rule is
+\begin{eqnarray*}
+&Z=0\textrm{ if }&\Psi_0-a>\Psi_1\textrm{,}\\
+&Z=1\textrm{ if }&\left\{ \begin{array}{cl}
+\Psi_0-a\le\Psi_1\\
+\textrm{and}\\
+\Psi_0+b>\Psi_1
+       \end{array} \right.\\
+&Z=2\textrm{ if }&\Psi_0+b\le\Psi_1\textrm{.}
+\end{eqnarray*}
+The model is shown in the lower panels of Fig.~2. The bottom-left panel shows a trial where $W=0$. The blue shaded region $f$ is given by
+\begin{eqnarray*}
+P\left\{Z=2\mid{}W=0\right\}=f=\Phi\left(\frac{-d-b}{\sqrt{2}}\right)\textrm{.}
+\end{eqnarray*}
+The bottom-right panel shows a trial where $W=1$. The green shaded region $h$ is given by
+\begin{eqnarray*}
+P\left\{Z=2\mid{}W=1\right\}=h=\Phi\left(\frac{d-b}{\sqrt{2}}\right)\textrm{.}
+\end{eqnarray*}It should be obvious from the previous sections that the maximum-likelihood estimate of $d$ under the modified 2AFC model is given by Eq. 5, and is the same as under the regular 2AFC model.
+\end{documentP\left\{Z=2\mid{}W=0\right\}=}

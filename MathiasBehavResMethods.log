@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 NOV 2015 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 NOV 2015 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -626,34 +626,34 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Underfull \vbox (badness 4673) has occurred while \output is active []
 
  [7]
-[8] [9] [10] AED endfloat: Processing end Figures and Tables [11]
-(./MathiasBehavResMethods.fff <Fig1_3.pdf, id=52, 1149.62494pt x 181.22025pt>
-File: Fig1_3.pdf Graphic file (type pdf)
+[8] [9] [10] [11] AED endfloat: Processing end Figures and Tables [12]
+(./MathiasBehavResMethods.fff <Fig1_4.pdf, id=56, 1149.62482pt x 181.22025pt>
+File: Fig1_4.pdf Graphic file (type pdf)
 
-<use Fig1_3.pdf>
-Package pdftex.def Info: Fig1_3.pdf used on input line 4.
+<use Fig1_4.pdf>
+Package pdftex.def Info: Fig1_4.pdf used on input line 4.
 (pdftex.def)             Requested size: 469.75502pt x 74.04915pt.
- [12
+ [13
 
 
- <./Fig1_3.pdf>]) (./MathiasBehavResMethods.aux)
+ <./Fig1_4.pdf>]) (./MathiasBehavResMethods.aux)
 Package logreq Info: Writing requests to 'MathiasBehavResMethods.run.xml'.
 \openout1 = `MathiasBehavResMethods.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 9851 strings out of 493089
- 164815 string characters out of 6134842
- 607295 words of memory out of 5000000
- 13186 multiletter control sequences out of 15000+600000
+ 9852 strings out of 493089
+ 164820 string characters out of 6134842
+ 607306 words of memory out of 5000000
+ 13187 multiletter control sequences out of 15000+600000
  67337 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,57p,2270b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/lo
-cal/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texliv
-e/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2015/tex
-mf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2015/texmf-dist/fonts/
-enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/l
+ 44i,13n,59p,2270b,1314s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
+texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/20
+15/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2015/texmf-d
+ist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2015/texmf-dist/fonts/
+enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/l
 m/lmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmex10.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texli
@@ -665,10 +665,10 @@ blic/lm/lmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr8
 /local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on MathiasBehavResMethods.pdf (12 pages, 624013 bytes).
+Output written on MathiasBehavResMethods.pdf (13 pages, 635897 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 191 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

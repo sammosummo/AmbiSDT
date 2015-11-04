@@ -1,8 +1,8 @@
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
-    \includegraphics[width=1\textwidth]{Fig1_3.pdf}
-    \caption{Illustrations of the regular YN model (left panel) and our modified YN model with ambivalent or missing responses (right panel). In both panels, the two curves represent the probability distributions of observations from the two stimulus classes. The distance between the means of these distributions, $d$, is a measure of sensitivity. Under the regular YN model, the distance between $\frac{d}{2}$ and $k$ is a measure of bias, $c$. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively), and since $f$ and $h$ can be estimated directly from the data in an experiment, so too can $d$ and $c$. Under the modified YN model, $d$ can be estimated as before. However, the measure of bias, $\lambda$, requires an additional probability, $g$, to be estimated from the data as well. The model also contains a measure of decision uncertainty, $u$.}
+    \includegraphics[width=1\textwidth]{Fig1_4.pdf}
+    \caption{Illustrations of the regular YN model (left panel) and the modified YN model (right panel). In both panels, the two curves represent the probability distributions of observations from the two stimulus classes. Under the regular model, the distance between the means of the distributions, $d$, is a measure of sensitivity, and the distance between $\frac{d}{2}$ and $k$, denoted $c$, is a measure of bias. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively). Under the modified model, $d$ is again an appropriate measure of sensitivity and can be estimated in the same way. However, an appropriate measure of bias, $\lambda$, is calculated differently, and requires an additional probability, $g$, to be estimated from the data. The modified model contains an additional measure, $u$, that represents uncertainty or ambivalence in the decision process.}
     \label{fig:Figure1}
 \end{figure*}
 \efloatseparator
