@@ -1,0 +1,288 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{cabreraseparating2015}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=2403bea1aa6847d55623d0ba54e1df99}{Cabrera}{C\bibinitperiod}{Carlos}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=19dbe25c11b99b3b47b2eb5bc2478dbb}{Lu}{L\bibinitperiod}{{Zhong-Lin}}{Z\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b0a2a7d7425a5d8ea0b92d8a5aefdf61}{Dosher}{D\bibinitperiod}{Barbara}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d78a2944b2d2ebb6be24a0bcfe7154a6}
+      \strng{fullhash}{0bde4d7af41e00f1dc10aca2863a1807}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article we develop an extension to the signal detection theory framework to separately estimate internal noise arising from representational and decision processes. Our approach constrains signal detection theory models with decision noise by combining a multipass external noise paradigm with confidence rating responses. In a simulation study we present evidence that representation and decision noise can be separately estimated over a range of representative underlying representational and decision noise level configurations. These results also hold across a number of decision rules and show resilience to rule miss-specification. The new theoretical framework is applied to a visual detection confidence-rating task with 3 and 5 response categories. This study compliments and extends the recent efforts of researchers {(Benjamin,} Diaz, \& Wee, 2009; Mueller \& Weidemann, 2008; Rosner \& Kochanski, 2009; Kellen, Klauer, \& Singmann, 2012) to separate and quantify underlying sources of response variability in signal detection tasks.}
+      \field{journaltitle}{Psychological Review}
+      \field{number}{3}
+      \field{title}{Separating decision and encoding noise in signal detection tasks.}
+      \field{volume}{122}
+      \field{year}{2015}
+      \field{pages}{429}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1037/a0039348
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1037/a0039348
+      \endverb
+    \endentry
+    \entry{decarlosignal2002}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=aae648603cab5e9331b97fdc34befd3e}{{DeCarlo}}{D\bibinitperiod}{Lawrence\bibnamedelima T.}{L\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{aae648603cab5e9331b97fdc34befd3e}
+      \strng{fullhash}{aae648603cab5e9331b97fdc34befd3e}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An extension of signal detection theory {(SDT)} that incorporates mixtures of the underlying distributions is presented. The mixtures can be motivated by the idea that a presentation of a signal shifts the location of an underlying distribution only if the observer is attending to the signal; otherwise, the distribution is not shifted or is only partially shifted. Thus, trials with a signal presentation consist of a mixture of 2 (or more) latent classes of trials. Mixture {SDT} provides a general theoretical framework that offers a new perspective on a number of findings. For example, mixture {SDT} offers an alternative to the unequal variance signal detection model; it can also account for nonlinear normal receiver operating characteristic curves, as found in recent research.}
+      \field{journaltitle}{Psychological Review}
+      \field{number}{4}
+      \field{title}{Signal detection theory with finite mixture distributions: Theoretical developments with applications to recognition memory.}
+      \field{volume}{109}
+      \field{year}{2002}
+      \field{pages}{710}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1037/0033-295X.109.4.710
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1037/0033-295X.109.4.710
+      \endverb
+    \endentry
+    \entry{decarloon2012}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=aae648603cab5e9331b97fdc34befd3e}{{DeCarlo}}{D\bibinitperiod}{Lawrence\bibnamedelima T.}{L\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {sciencedirect}%
+      }
+      \strng{namehash}{aae648603cab5e9331b97fdc34befd3e}
+      \strng{fullhash}{aae648603cab5e9331b97fdc34befd3e}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Psychology}
+      \field{number}{3}
+      \field{title}{On a signal detection approach to -alternative forced choice with bias, with maximum likelihood and Bayesian approaches to estimation}
+      \field{volume}{56}
+      \field{year}{2012}
+      \field{pages}{196207}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jmp.2012.02.004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.jmp.2012.02.004
+      \endverb
+    \endentry
+    \entry{Green1966}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=85a3ad79329f42b095a2164f9b3ff617}{Green}{G\bibinitperiod}{D.\bibnamedelimi M.}{D\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7374e1cc579d901073880fa8293527f3}{Swets}{S\bibinitperiod}{J.\bibnamedelimi A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley}%
+      }
+      \strng{namehash}{95a98e38afe9b767127471b4f5bb862f}
+      \strng{fullhash}{95a98e38afe9b767127471b4f5bb862f}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{1966}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Signal Detection Theory and Psychophysics}
+      \field{year}{1966}
+    \endentry
+    \entry{kreitewolfhemispheric2014}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=65839a875936ebd97b2ca08878264954}{Kreitewolf}{K\bibinitperiod}{Jens}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d23d4cc3c0ce3b88950b3b5e49064396}{Friederici}{F\bibinitperiod}{Angela\bibnamedelima D}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=509498515dfb3a8d44e829b071ffcf21}{Kriegstein}{K\bibinitperiod}{Katharina}{K\bibinitperiod}{von}{v\bibinitperiod}{}{}}%
+      }
+      \strng{namehash}{e790932e88b7fa290ec6af410937a280}
+      \strng{fullhash}{5c63223c90487784e3a8a3080f7e53ee}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hemispheric specialization for linguistic prosody is a controversial issue. While it is commonly assumed that linguistic prosody and emotional prosody are preferentially processed in the right hemisphere, neuropsychological work directly comparing processes of linguistic prosody and emotional prosody suggests a predominant role of the left hemisphere for linguistic prosody processing. Here, we used two functional magnetic resonance imaging {(fMRI)} experiments to clarify the role of left and right hemispheres in the neural processing of linguistic prosody. In the first experiment, we sought to confirm previous findings showing that linguistic prosody processing compared to other speech-related processes predominantly involves the right hemisphere. Unlike previous studies, we controlled for stimulus influences by employing a prosody and speech task using the same speech material. The second experiment was designed to investigate whether a left-hemispheric involvement in linguistic prosody processing is specific to contrasts between linguistic prosody and emotional prosody or whether it also occurs when linguistic prosody is contrasted against other non-linguistic processes (i.e., speaker recognition). Prosody and speaker tasks were performed on the same stimulus material. In both experiments, linguistic prosody processing was associated with activity in temporal, frontal, parietal and cerebellar regions. Activation in temporo-frontal regions showed differential lateralization depending on whether the control task required recognition of speech or speaker: recognition of linguistic prosody predominantly involved right temporo-frontal areas when it was contrasted against speech recognition; when contrasted against speaker recognition, recognition of linguistic prosody predominantly involved left temporo-frontal areas. The results show that linguistic prosody processing involves functions of both hemispheres and suggest that recognition of linguistic prosody is based on an inter-hemispheric mechanism which exploits both a right-hemispheric sensitivity to pitch information and a left-hemispheric dominance in speech processing.}
+      \field{journaltitle}{{NeuroImage}}
+      \field{title}{Hemispheric lateralization of linguistic prosody recognition in comparison to speech and speaker recognition.}
+      \field{volume}{102 Pt 2}
+      \field{year}{2014}
+      \field{pages}{332\bibrangedash 344}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.neuroimage.2014.07.038
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.neuroimage.2014.07.038
+      \endverb
+    \endentry
+    \entry{laskowskaemotional2015}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=64f5a678ccdaf8d71f32d3aeb73fc204}{Laskowska}{L\bibinitperiod}{Ilona\bibnamedelima P.}{I\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=03d8abe651600d26ad827ce33b3d61da}{\L{}\c{e}ski}{\L{}\bibinitperiod}{Ludwika\bibnamedelima Gawry\'{s}}{L\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=48877a0977b465d3c4f3398f23da7c9e}{Koziorowski}{K\bibinitperiod}{Dariusz}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2a7f6eba6d448b4c3182d6887afe80b2}
+      \strng{fullhash}{90c0ee720ebba5a635f0e014de76f847}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deficits in facial emotion recognition in Parkinson\x{fffd}\x{fffd}\x{fffd}s disease {(PD)} patients has been well documented. Nevertheless, it is still not clear whether facial emotion recognition deficits are secondary to other cognitive impairments. The aim of this study was to answer the question of whether deficits in facial emotion recognition in {PD} result from impaired sensory processes, or from impaired decision processes. To address this question, we tested the ability to recognize a mixture of basic and complex emotions in 38 non-demented {PD} patients and 38 healthy controls matched on demographic characteristics. By using a task with an increased level of ambiguity, in conjunction with the signal detection theory, we were able to differentiate between sensitivity and response bias in facial emotion recognition. Sensitivity and response bias for facial emotion recognition were calculated using a d-prime value and a c index respectively. Our study is the first to employ the {EIS-F} scale for assessing facial emotion recognition among {PD} patients; to test its validity as an assessment tool, a group comprising schizophrenia patients and healthy controls were also tested. Patients with {PD} recognized emotions with less accuracy than healthy individuals (d-prime) and used a more liberal response criterion (c index). By contrast, patients with schizophrenia merely showed diminished sensitivity (d-prime). Our results suggest that an impaired ability to recognize facial emotions in {PD} patients may result from both decreased sensitivity and a significantly more liberal response criteria, whereas facial emotion recognition in schizophrenia may stem from a generalized sensory impairment only.}
+      \field{journaltitle}{Frontiers in Psychology}
+      \field{title}{Emotional processing in Parkinson\x{fffd}\x{fffd}\x{fffd}s disease and schizophrenia: evidence for response bias deficits in {PD}}
+      \field{volume}{6}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.3389/fpsyg.2015.01417
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3389/fpsyg.2015.01417
+      \endverb
+    \endentry
+    \entry{Macmillan2005}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2c519f0704bc76231763d01933494a61}{Macmillan}{M\bibinitperiod}{N.\bibnamedelimi A.}{N\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c402cbe1f366d1dcb0d9ccf3bc471eaf}{Creelman}{C\bibinitperiod}{C.\bibnamedelimi D.}{C\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Mahwah, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Lawrence Erlbaum Associates}%
+      }
+      \strng{namehash}{086179692cce769f5f27b17dd42c1c79}
+      \strng{fullhash}{086179692cce769f5f27b17dd42c1c79}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dection Theory: \uppercase{A} User's Guide}
+      \field{year}{2005}
+    \endentry
+    \entry{Peterson1954}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=7dc43b95bdceb6b7aae5c49f06d5b49f}{Peterson}{P\bibinitperiod}{W.\bibnamedelimi W.}{W\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=853715f9749c202b45b428d4d83ab8c7}{Birdsall}{B\bibinitperiod}{T.\bibnamedelimi G.}{T\bibinitperiod\bibinitdelim G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=12782a50e24a7c53a50f2431f3ca46c6}{Fox}{F\bibinitperiod}{W.\bibnamedelimi C.}{W\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dba00cb0966a05442f52cbd97a77499c}
+      \strng{fullhash}{ada22569b3f200e1c229917149208034}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1954}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transactions of the IRE Group on Information Theory}
+      \field{title}{The theory of signal detectability.}
+      \field{volume}{PGIT-4}
+      \field{year}{1954}
+      \field{pages}{171\bibrangedash 212}
+      \range{pages}{42}
+    \endentry
+    \entry{Tanner1954}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=57cdae7aefe6cb89ede28724f79c8d2c}{Tanner}{T\bibinitperiod}{Jr.}{J\bibinitperiod}{}{}{W.\bibnamedelimi P.}{W\bibinitperiod\bibinitdelim P\bibinitperiod}}%
+        {{uniquename=0,hash=7374e1cc579d901073880fa8293527f3}{Swets}{S\bibinitperiod}{J.\bibnamedelimi A.}{J\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{130a595c437dba4dca2f12e794d6c952}
+      \strng{fullhash}{130a595c437dba4dca2f12e794d6c952}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1954}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Review}
+      \field{title}{A decision-making theory of visual detection}
+      \field{volume}{61}
+      \field{year}{1954}
+      \field{pages}{401\bibrangedash 406}
+      \range{pages}{6}
+    \endentry
+    \entry{Wixted2007}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c9feaedf5ee49398e3e2a0885f233cc0}{Wixted}{W\bibinitperiod}{J.T.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c9feaedf5ee49398e3e2a0885f233cc0}
+      \strng{fullhash}{c9feaedf5ee49398e3e2a0885f233cc0}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Review}
+      \field{title}{Dual-Process Theory and Signal-Detection Theory of Recognition Memory.}
+      \field{volume}{114}
+      \field{year}{2007}
+      \field{pages}{152\bibrangedash 176}
+      \range{pages}{25}
+    \endentry
+    \entry{Yonelinas2007}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f5542ef4ab7eb83078cb0d037898f261}{Yonelinas}{Y\bibinitperiod}{A.P.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7252866051d82b9eac350ac085f37966}{Parks}{P\bibinitperiod}{C.M.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{cef9059b1a93c316f7c548f312d4e919}
+      \strng{fullhash}{cef9059b1a93c316f7c548f312d4e919}
+      \field{sortinit}{Y}
+      \field{sortinithash}{3cbc1e3d286284cedb5e5218a3248f94}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Bulletin}
+      \field{title}{Receiver operating characteristics ({ROC}s) in recognition memory: {A} review}
+      \field{volume}{113}
+      \field{year}{2007}
+      \field{pages}{800\bibrangedash 832}
+      \range{pages}{33}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

@@ -1,0 +1,9 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+    \includegraphics[width=1\textwidth]{Fig1_3.pdf}
+    \caption{Illustrations of the regular YN model (left panel) and our modified YN model with ambivalent or missing responses (right panel). In both panels, the two curves represent the probability distributions of observations from the two stimulus classes. The distance between the means of these distributions, $d$, is a measure of sensitivity. Under the regular YN model, the distance between $\frac{d}{2}$ and $k$ is a measure of bias, $c$. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively), and since $f$ and $h$ can be estimated directly from the data in an experiment, so too can $d$ and $c$. Under the modified YN model, $d$ can be estimated as before. However, the measure of bias, $\lambda$, requires an additional probability, $g$, to be estimated from the data as well. The model also contains a measure of decision uncertainty, $u$.}
+    \label{fig:Figure1}
+\end{figure*}
+\efloatseparator
+ 
