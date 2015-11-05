@@ -146,7 +146,7 @@ The maximum-likelihood estimate of $d$ under the regular 2AFC model is therefore
 \end{eqnarray}
 
 \subsection{2AFC model with ambivalent or missing responses}
-As before, two modifications are required to allow ambivalent or missing responses in 2AFC experiments. The first is to include two additional variables, $a$ and $b$. The second is to modify the decision rule. Let $Z$ denote the subject's response. When $Z=0$, the subject chooses the first stimulus. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject chooses the second stimulus. The decision rule is
+As before, two modifications are required to allow ambivalent or missing responses in 2AFC experiments. The first is to include two additional variables, $\alpha$ and $\beta$, that form a ``yardstick'' around $\Psi_0$\footnote{The yardstick metaphor has been used previously by XXX to rationalize the SDT analysis of same-different experiments.}. The second is to modify the decision rule. As under the regular 2AFC model, the subject chooses whichever stimulus has the largest corresponding observation (after taking into account bias), but makes an affirmative response only if $\Psi_1$ falls further the yardstick. Let $Z$ denote the subject's response. When $Z=0$, the subject chooses the first stimulus. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject chooses the second stimulus. The decision rule is
 \begin{eqnarray*}
 &Z=0\textrm{ if }&\Psi_0-a>\Psi_1\textrm{,}\\
 &Z=1\textrm{ if }&\left\{ \begin{array}{cl}
@@ -158,10 +158,16 @@ As before, two modifications are required to allow ambivalent or missing respons
 \end{eqnarray*}
 The model is shown in the lower panels of Fig.~2. The bottom-left panel shows a trial where $W=0$. The blue shaded region $f$ is given by
 \begin{eqnarray*}
-P\left\{Z=2\mid{}W=0\right\}=f=\Phi\left(\frac{-d-b}{\sqrt{2}}\right)\textrm{.}
+P\left\{Z=2\mid{}W=0\right\}=f=\Phi\left(\frac{-d-\beta}{\sqrt{2}}\right)\textrm{.}
 \end{eqnarray*}
 The bottom-right panel shows a trial where $W=1$. The green shaded region $h$ is given by
 \begin{eqnarray*}
-P\left\{Z=2\mid{}W=1\right\}=h=\Phi\left(\frac{d-b}{\sqrt{2}}\right)\textrm{.}
-\end{eqnarray*}It should be obvious from the previous sections that the maximum-likelihood estimate of $d$ under the modified 2AFC model is given by Eq. 5, and is the same as under the regular 2AFC model.
-\end{documentP\left\{Z=2\mid{}W=0\right\}=}
+P\left\{Z=2\mid{}W=1\right\}=h=\Phi\left(\frac{d-\beta}{\sqrt{2}}\right)\textrm{.}
+\end{eqnarray*}It should be clear from the preceding sections that the maximum-likelihood estimate of $d$ under the modified 2AFC model is given by the same equation as under the regular 2AFC model (Eq.~5). An appropriate measure of bias is the distance from $\Psi_0$ to the center of the yardstick, $\frac{1}{2}\left(\alpha+\beta\right)$. To calculate this quantity, we require the conditional probability $P\left\{Z=1\mid{}W=0\right\}$, denoted $g$, which is given by
+\begin{eqnarray*}
+P\left\{Z=1\mid{}W=0,\Psi_0=x\right\}=\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)
+\end{eqnarray*}
+
+
+
+\end{document}
