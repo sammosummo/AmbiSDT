@@ -3,6 +3,26 @@
 
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{beramono}
+\usepackage{listings}
+\lstset{
+  language=Python,
+  showstringspaces=false,
+  formfeed=\newpage,
+  tabsize=4,
+  commentstyle=\itshape,
+  basicstyle=\ttfamily,
+  morekeywords={models, lambda, forms}
+}
+
+\newcommand{\code}[2]{
+  \hrulefill
+  \subsection*{#1}
+  \lstinputlisting{#2}
+  \vspace{2em}
+}
+
 \DeclareLanguageMapping{american}{american-apa}
 
 \addbibresource{refs.bib}
@@ -15,7 +35,7 @@
 
 \affiliation{Yale University}
 
-\abstract{Signal detection theory (SDT) allows researchers to calculate psychologically meaningful measures from the counts of responses and trials in behavioral experiments. Most SDT models require that subjects make an affirmative response (e.g., ``yes'' or ``no;'' ``first'' or ``second'') to each trial in an experiment. Occasionally, researchers may wish to allow subjects to make ambivalent responses (e.g., ``I don't know''), or not force them to respond to all trials. Here, we propose modifications to the standard SDT models that allow ambivalence and omissions for yes-no and two-alternative forced-choice experiments. Under the modified models, equations for calculating sensitivity are the same as those of regular SDT, but equations for calculating bias are different. Furthermore, the modified models include additional psychologically meaningful measures that allow researchers to quantify ambivalence or uncertainty in the decision process.}
+\abstract{Signal detection theory (SDT) allows researchers to calculate psychologically meaningful measures from the counts of responses and trials in behavioral experiments. Most SDT models require that subjects make an affirmative response (e.g., ``yes'' or ``no;'' ``first'' or ``second'') to each trial in the experiment. Occasionally, researchers may wish to allow subjects to make ambivalent responses (e.g., ``I don't know''), or not force them to respond to all trials. Here, we propose modifications to the standard SDT models that allow ambivalence and omissions in yes-no and two-alternative forced-choice experiments. Under the modified models, equations for calculating sensitivity are the same as those of regular SDT, but equations for calculating bias are different. Furthermore, the modified models include additional psychologically meaningful measures that allow researchers to quantify ambivalence or uncertainty in the decision process.}
 
 \keywords{signal detection theory, methods, modeling, statistics}
 \authornote{Samuel R. Mathias, Department of Psychiatry, Yale School of Medicine, Yale University, New Haven, Connecticut; Emma E. E. M. Knowles, Department of Psychiatry, Yale School of Medicine, Yale University, New Haven, Connecticut; David C. Glahn, Department of Psychiatry, Yale School of Medicine, Yale University, New Haven, Connecticut.
@@ -32,7 +52,7 @@ New Haven, CT 06519. E-mail:~samuel.mathias@yale.edu}
 \section{Introduction}
 Signal detection theory (SDT) is a widely used framework that allows researchers to transform the raw data from an experiment---the counts of trials and responses---into psychologically meaningful measures of sensitivity and bias. Methods for calculating these measures are generally straightforward to implement for common experimental designs \parencite[see][]{Green1966, Macmillan2005}. The two most common designs are yes-no (YN) and two-alternative forced-choice (2AFC).
 
-In most experiments with SDT-friendly designs, subjects are required make an affirmative response (e.g., ``yes'' or ``no;'' ``first'' or ``second'') to each trial. However, researchers occasionally may wish to conduct experiments that do not require affirmative responses. For example, the standard YN and 2AFC designs could be modified to include an additional response that allows subjects to indicate uncertainty or ambivalence towards the other responses (e.g. ``I don't know''). However, including ambivalent responses flouts the requirements of regular SDT models, making it less straightforward to calculate sensitivity and bias.
+In most experiments with SDT-friendly designs, subjects are required make an affirmative response (e.g., ``yes'' or ``no;'' ``first'' or ``second'') to each trial. However, researchers occasionally may wish to conduct experiments that do not require affirmative responses. For example, the standard YN and 2AFC designs could be modified to include an additional response that allows subjects to indicate ambivalence towards the other responses (e.g. ``I don't know''). However, including ambivalent responses flouts the requirements of regular SDT models, making it less straightforward to calculate sensitivity and bias.
 
 Consider the recent study by \textcite{laskowskaemotional2015}, in which patients with Parkinson's disease, patients with schizophrenia, and healthy controls completed a test of facial emotion recognition. On each trial, subjects saw a photograph of a face and reported which of six possible emotions were conveyed, and which were not, by choosing one of three possibilities per emotion: ``shown,'' ``not shown,'' and ``hard to say.'' It was possible for a photograph to display more than one emotion. The authors analyzed the data using a standard SDT model by considering each response (six per photograph) as a separate YN trial. The authors found that, on average, the Parkinson's disease and schizophrenia patients had lower sensitivity to facial emotions than the controls, and that the Parkinson's disease patients adopted a more liberal response strategy than the controls. However, the authors had to recode ``hard to say'' responses before they could calculate sensitivity and bias, which vitiates the interpretation of their statistically significant group differences.
 
@@ -63,11 +83,11 @@ P\left\{Y=1\mid{}X=1\right\}=h&=&1-\Phi\left(k-d\right)\\
 &=&1-\Phi\left(c-\frac{d}{2}\right)\textrm{.}
 \end{eqnarray*}
 
-\begin{figure}
-    \includegraphics[width=1\textwidth]{Fig1_4.pdf}
-    \caption{Illustrations of the regular YN model (left panel) and the modified YN model (right panel). In both panels, the two curves represent the probability distributions of observations from the two stimulus classes. Under the regular model, the distance between the means of the distributions, $d$, is a measure of sensitivity, and the distance between $\frac{d}{2}$ and $k$, denoted $c$, is a measure of bias. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively). Under the modified model, $d$ is again an appropriate measure of sensitivity and can be estimated in the same way. However, an appropriate measure of bias, $\lambda$, is calculated differently, and requires an additional probability, $g$, to be estimated from the data. The modified model contains an additional measure, $u$, that represents uncertainty or ambivalence in the decision process.}
-    \label{fig:Figure1}
-\end{figure}
+%\begin{figure}
+   % \includegraphics[width=1\textwidth]{Fig1_4.pdf}
+    %\caption{Illustrations of the regular YN model (left panel) and the modified YN model (right panel). In both panels, the two curves represent the probability distributions of observations from the two stimulus classes. Under the regular model, the distance between the means of the distributions, $d$, is a measure of sensitivity, and the distance between $\frac{d}{2}$ and $k$, denoted $c$, is a measure of bias. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively). Under the modified model, $d$ is again an appropriate measure of sensitivity and can be estimated in the same way. However, an appropriate measure of bias, $\lambda$, is calculated differently, and requires an additional probability, $g$, to be estimated from the data. The modified model contains an additional measure, $u$, that represents uncertainty or ambivalence in the decision process.}
+    %\label{fig:Figure1}
+%\end{figure}
 
 Crucially, because $f$ and $h$ can be estimated directly from the data in an experiment, the above equations can be combined and re-arranged to produce estimates of sensitivity and bias. Specifically, the equation for estimating sensitivity is
 \begin{eqnarray}
@@ -77,12 +97,12 @@ Crucially, because $f$ and $h$ can be estimated directly from the data in an exp
 \begin{eqnarray}
 \hat{c}&=&-\frac{1}{2}\left[\Phi^{-1}\left(\hat{h}\right)+\Phi^{-1}\left(\hat{f}\right)\right]\textrm{.}
 \label{eq2}
-\end{eqnarray}
+\end{eqnarray}Verification of the model via Python code is provided in Appendix A.
 
-It is worth noting that the assumptions of the regular YN model can be relaxed in various ways. For example, it is possible for the probability distributions of $\Psi_{X=0}$ and $\Psi_{X=1}$ to be non-Gaussian, or have different variances. Indeed, work on recognition memory has consistently reported phenomena that are inconsistent with the regular YN model but can be explained by assuming unequal variances \parencite{Wixted2007, Yonelinas2007} or by assuming that $\Psi_{X=0}$ and $\Psi_{X=1}$ are drawn from mixtures of latent distributions \parencite{decarlosignal2002}. Another possibility is to allow $k$ to vary across trials rather than remaining constant over trials \parencite{cabreraseparating2015}. However, relaxing any of these assumptions means that the YN model is no longer exactly identified (i.e., the number of independent unknown variables and the number of known variables are not the same), so consequently cannot be solved for $d$ and $c$. For the purposes of this article, we adhere to these assumptions, but note that future work could extend our models to incorporate unequal variance, non-Gaussian decision variables, and variable criteria.
+It is worth noting that the assumptions of the regular YN model can be relaxed in various ways. For example, it is possible for the probability distributions of $\Psi_{X=0}$ and $\Psi_{X=1}$ to be non-Gaussian, or have different variances. Indeed, work on recognition memory has consistently reported phenomena that are inconsistent with the regular YN model but can be explained by assuming unequal variances \parencite{Wixted2007, Yonelinas2007} or by assuming that $\Psi_{X=0}$ and $\Psi_{X=1}$ are drawn from mixtures of latent distributions \parencite{decarlosignal2002}. Another possibility is to allow $k$ to vary across trials rather than remaining constant over trials \parencite{cabreraseparating2015}. However, relaxing any of these assumptions means that the YN model is no longer exactly identified (i.e., the number of independent unknown variables and the number of independent known variables are not the same), so consequently cannot be solved for $d$ and $c$. For the purposes of this article, we adhere to these assumptions, but note that future work could extend our models to incorporate unequal variance, non-Gaussian decision variables, and variable criteria.
 
-\subsection{YN model with ambivalent or missing responses}
-One can account for ambivalent or missing responses with two modifications to the regular YN model, as shown in the right panel of Fig.~\ref{fig:Figure1}. The first modification is that the model contains two criteria, denoted $a$ and $b$. The second modification is to the decision rule. Let $Z$ denote the subject's response. When $Z=0$, the subject responds that the stimulus is in the first class. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject responds that the stimulus is in the second class. This decision rule can be written as
+\subsection{Modified YN model}
+One can account for ambivalent or missing responses in YN experiments with two modifications to the regular YN model, as illustrated in the right panel of Fig.~\ref{fig:Figure1}. The first is that the modified model contains two criteria, $a$ and $b$, rather than a single criterion. The second modification is to the decision rule. Let $Z$ denote the subject's response. When $Z=0$, the subject responds that the stimulus is in the first class. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject responds that the stimulus is in the second class. This decision rule can be written as
 \begin{eqnarray*}
 &Z=0\textrm{ if }\Psi<a\textrm{,}\\
 &Z=1\textrm{ if }a\le\Psi<b\textrm{,}\\
@@ -96,25 +116,27 @@ P\left\{Z=2\mid{}X=1\right\}&=&h=1-\Phi\left(b-d\right)\textrm{.}
 By combining these equations and solving for $d$, and replacing $f$ and $h$ with their respective maximum-likelihood estimates from the data, we again arrive at
 \begin{eqnarray*}
 \hat{d}&=&\Phi^{-1}\left(\hat{h}\right)-\Phi^{-1}\left(\hat{f}\right)\textrm{.}
-\end{eqnarray*}In other words, the equation for estimating sensitivity under the YN model with ambivalent or missing responses is the same as under the regular YN model (Eq.~\ref{eq1}). However, care must be taken to calculate $\hat{f}$ and $\hat{h}$ appropriately: the numbers of false alarms and hits must be divided by the \emph{total} number of trials (i.e., including trials with ambivalent or missing trials responses), and ambivalent or missing responses must not be recoded.
+\end{eqnarray*}In other words, the equation for estimating sensitivity under the modified YN model is the same as under the regular YN model (Eq.~\ref{eq1}). No recoding of trials is necessary.
 
-Under this model, a subject could be said to be unbiased if the criteria $a$ and $b$ were centered on $\frac{d}{2}$, since both affirmative responses would be equally likely in this case. Thus, an appropriate measure of bias, analogous to $c$ from the regular YN model, is the distance between $\frac{d}{2}$ and the midpoint between $a$ and $b$. We denote this quantity $\lambda$. It is related to $a$, $b$, and $d$ via the equation
+Under the modified YN model, a subject could be said to be unbiased if the criteria $a$ and $b$ were centered on $\frac{d}{2}$, since both affirmative responses would be equally likely in this case. Thus, an appropriate measure of bias, analogous to $c$ from the regular YN model, is the distance between $\frac{d}{2}$ and the midpoint between $a$ and $b$. We denote this quantity $\lambda$. It is related to $a$, $b$, and $d$ via the equation
 \begin{eqnarray*}\lambda=\frac{1}{2}\left(a+b-d\right)\textrm{.}\end{eqnarray*}
 
-An additional probability is required to calculate $\lambda$. The red shaded region in the left panel of Fig. 1 shows this probability, $P\left\{Z=1\mid{}X=0\right\}$, which we denote $g$ and can be expressed as\begin{eqnarray*}
+An additional probability is required to calculate $\lambda$. The red shaded region in the left panel of Fig. 1 shows $P\left\{Z=1\mid{}X=0\right\}$, which we denote $g$ for convenience. This probability can be expressed in terms of $a$ and $b$:
+\begin{eqnarray*}
 P\left\{Z=1\mid{}X=0\right\}=g&=&\Phi\left(b\right)-\Phi\left(a\right)\textrm{.}
 \end{eqnarray*}
 Like $f$ and $h$, $g$ can be estimated directly from the data---it is proportion of ambivalent or missing responses when the stimulus was drawn from the first class. Therefore, the above equations can be combined and rearranged to arrive at the equation for the maximum-likelihood estimate of $\lambda$:
 \begin{eqnarray}
 \hat{\lambda}&=&-\frac{1}{2}\left[\Phi^{-1}\left(\hat{f}+\hat{g}\right)+\Phi^{-1}\left(\hat{h}\right)\right]\textrm{.}
-\end{eqnarray}The model allows a third psychologically meaningful measure to be calculated from the data. The distance between the two criteria, denoted $u$, represents the degree of uncertainty or ambivalence within the decision process. We therefore refer to it as the ``index of uncertainty.'' This measure can be estimated from the data using the equation
+\end{eqnarray}The model allows a third psychologically meaningful measure to be calculated from the data. The distance between the two criteria, denoted $u$, represents the degree of uncertainty or ambivalence within the decision process. This measure can be estimated from the data using the equation
 \begin{eqnarray}
 \hat{u}&=&\Phi^{-1}\left(\hat{f}+\hat{g}\right)-\Phi^{-1}\left(\hat{f}\right)\textrm{.}
-\end{eqnarray}Note that, in the special case where $u=0$, the modified model reduces to the regular YN model: $\lambda$ is equivalent to $c$, and can be calculated using Eq. 2, as usual.
-\subsection{Regular 2AFC model}
-SDT can be used to calculate measures of sensitivity and bias from 2AFC experiments \parencite[e.g.,][]{decarloon2012}. The key difference between YN and 2AFC is that the subject generates two
+\end{eqnarray}Note that, in the special case where $u=0$, the modified model reduces to the regular YN model: $\lambda$ is equivalent to $c$, and can be calculated using Eq. 2, as usual. Verification of the model via Python code is provided in Appendix B.
 
-On each trial in a 2AFC experiment, the subject is presented with two stimuli per trial. The stimuli are drawn from two different stimulus classes, and presented in random order. Let $W$ denote the presentation order of the stimuli. When $W=0$, the first stimulus is drawn from the first class, and the second stimulus is drawn from the second class. When $W=1$, the first stimulus is drawn from the second class, and the second stimulus is drawn from the first class. The subject makes two observations per trial, $\Psi_0$ and $\Psi_1$, corresponding to the first and second stimuli, respectively, and then chooses whichever stimulus had the larger corresponding observation. In order to account for bias, a quantity is always added to the first observation prior to the decision being made \parencite[see][]{decarloon2012}. Let $Y$ represent the subject's response to a trial. When $Y=0$, the subject chooses the first stimulus, and when $Y=1$, the subject chooses the second stimulus. This decision rule can be expressed formally as
+\subsection{Regular 2AFC model}
+In YN experiments, subjects are presented with one stimulus per trial. In 2AFC experiments, subjects are presented with two stimuli per trial, one belonging to each stimulus class, usually in sequential order. SDT can be readily extended to such experiments, allowing researchers to calculate measures of sensitivity and bias  \parencite[e.g.,][]{decarloon2012}. In both YN and 2AFC models, ``sensitivity'' has the same meaning---it refers to the distance between the means of the stimulus classes. However, ``bias'' has a different meaning. In YN experiments, bias refers to a preference for selecting one stimulus class over the other; in 2AFC experiments, bias refers to a preference for one stimulus over the other (e.g., the first).
+
+Let $W$ denote the presentation order of the stimuli in a 2AFC experiment. When $W=0$, the first stimulus is drawn from the first class, and the second stimulus is drawn from the second class. When $W=1$, the first stimulus is drawn from the second class, and the second stimulus is drawn from the first class. The subject makes two observations per trial, $\Psi_0$ and $\Psi_1$, corresponding to the first and second stimuli, respectively, and then chooses whichever stimulus had the larger corresponding observation. In order to account for bias, a quantity is always added to the first observation prior to the decision being made \parencite[see][]{decarloon2012}. Let $Y$ represent the subject's response to a trial. When $Y=0$, the subject chooses the first stimulus, and when $Y=1$, the subject chooses the second stimulus. This decision rule can be expressed formally as
 \begin{eqnarray*}
 &Y=0\textrm{ if }\Psi_0+l>\Psi_1\textrm{,}\\
 &Y=1\textrm{ if }\Psi_0+l\le\Psi_1\textrm{,}
@@ -134,7 +156,6 @@ P\left\{Y=1\mid{}W=1,\Psi_0=y\right\}=1-\Phi\left(y+l-d\right)\textrm{,}
 \end{eqnarray*} where $y\sim\mathcal{N}\left(0,1\right)$; and
 \begin{eqnarray*}
 P\left\{Y=1\mid{}W=1\right\}=h&=&\int\!\left[1-\Phi\left(y+l-d\right)\right]\phi\left(y\right)\textrm{d}y\\
-&=&\int\!\Phi\left(d-y-l\right)\phi\left(y\right)\textrm{d}y\\
 &=&\Phi\left(\frac{d-l}{\sqrt{2}}\right)\textrm{.}
 \end{eqnarray*}
 The maximum-likelihood estimate of $d$ under the regular 2AFC model is therefore given by
@@ -145,10 +166,10 @@ The maximum-likelihood estimate of $d$ under the regular 2AFC model is therefore
 \begin{eqnarray}
 \hat{l}=-\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(\hat{h}\right)+\Phi^{-1}\left(\hat{f}\right)\right]\textrm{.}
 \label{eq6}
-\end{eqnarray}
+\end{eqnarray}Verification of the model via Python code is provided in Appendix C.
 
-\subsection{2AFC model with ambivalent or missing responses}
-Ambivalent or missing responses in 2AFC experiments can be accounted for using the concept of a ``yardstick'' heuristic \parencite{decarlosignal2013}. As under the regular 2AFC model, the subject makes two observations per trial, and chooses whichever stimulus has the largest corresponding observation (after taking into account bias). However, under the modified model, the subject also places a yardstick around $\Psi_0$, and makes an affirmative response only if $\Psi_1$ falls beyond the endpoints of the yardstick. Let $Z$ denote the subject's response. When $Z=0$, the subject chooses the first stimulus. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject chooses the second stimulus. The decision rule is
+\subsection{Modified 2AFC model}
+Ambivalent or missing responses in 2AFC experiments can be accomodated using a ``yardstick'' heuristic \parencite{decarlosignal2013}. As under the regular 2AFC model, the subject makes two observations per trial, and chooses whichever stimulus has the largest corresponding observation (after taking into account bias). However, under the modified model, the subject also places a yardstick around $\Psi_0$, and makes an affirmative response only if $\Psi_1$ falls beyond the endpoints of the yardstick. Let $Z$ denote the subject's response. When $Z=0$, the subject chooses the first stimulus. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject chooses the second stimulus. The decision rule is
 \begin{eqnarray*}
 &Z=0\textrm{ if }&\Psi_0-\alpha>\Psi_1\textrm{,}\\
 &Z=1\textrm{ if }&\left\{ \begin{array}{cl}
@@ -167,19 +188,60 @@ The bottom-right panel shows a trial where $W=1$. The green shaded region $h$ is
 P\left\{Z=2\mid{}W=1\right\}=h=\Phi\left(\frac{d-\beta}{\sqrt{2}}\right)\textrm{.}
 \end{eqnarray*}Combining and rearranging these equations reveals that the maximum-likelihood estimate of $d$ under the modified 2AFC model is given by the same equation as under the regular 2AFC model (Eq.~5).
 
-Under the modified 2AFC model, the subject could be said to be unbiased if the yardstick was centered on the first observation. The degree of asymmetry in the placement of the yardstick, $\zeta$, is therefore an appropriate measure of bias. To calculate this measure, $\zeta$, we require the conditional probability $P\left\{Z=1\mid{}W=0\right\}$, denoted $g$, which is given by
+Under the modified 2AFC model, the subject could be said to be unbiased if the middle of the yardstick was always equal to the value of first observation, $\Psi_0$. The distance from the middle of the yardstick is given by $x + \frac{1}{2}\left(\beta-\alpha\right)$, where $x$ is an instance of $\Psi_0$. Therefore, an appropriate measure of bias is this quantity minus $x$, or
+\begin{eqnarray*}
+\zeta=\frac{1}{2}\left(\beta-\alpha\right)\textrm{.}
+\end{eqnarray*}
+Since $\beta$ is just $l$ from the regular 2AFC model, it can be expressed uniquely in terms of $h$ and $f$:
+\begin{eqnarray*}
+\beta=-\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(h\right)+\Phi^{-1}\left(f\right)\right]\textrm{.}
+\end{eqnarray*}
+By contrast, $\alpha$ requires an additional conditional probability, $P\left\{Z=1\mid{}W=0\right\}$ (denoted $g$ for convenience) which is given by
 \begin{eqnarray*}
 P\left\{Z=1\mid{}W=0,\Psi_0=x\right\}&=&\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\\
-P\left\{Z=1\mid{}W=0\right\}=g&=&\int\!\left[\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\right]\phi\left(x\right)\textrm{d}x\\
-&=&??
-\end{eqnarray*}Therefore, the maximum-likelihood estimate of $\zeta$ is given by
-\begin{eqnarray}
-\hat{\zeta}&=&-\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(\hat{f}+\hat{g}\right)+\Phi^{-1}\left(\hat{h}\right)\right]\textrm{.}
-\end{eqnarray}The model allows a third psychologically meaningful measure to be calculated from the data. The distance between the two criteria, denoted $u$, represents the degree of uncertainty or ambivalence within the decision process. We therefore refer to it as the ``index of uncertainty.'' This measure can be estimated from the data using the equation
-\begin{eqnarray}
-\hat{u}&=&\Phi^{-1}\left(\hat{f}+\hat{g}\right)-\Phi^{-1}\left(\hat{f}\right)\textrm{.}
-\end{eqnarray}
+%P\left\{Z=2\mid{}W=1\right\}=h=\Phi\left(\frac{d-\beta}{\sqrt{2}}\right)\textrm{.}
+\end{eqnarray*}
+%degree of asymmetry in the placement of the yardstick, $\zeta$, is therefore an appropriate measure of bias. The midpoint of the yardstick 
+
+% To calculate this measure, $\zeta$, we require the conditional probability $P\left\{Z=1\mid{}W=0\right\}$, denoted $g$, which is given by
 
 
+
+
+
+
+
+
+
+%To measure bias under this model, we must first find equations for $\alpha$ and $\beta$. Since $\beta$ is the same as $l$ under the regular 2AFC model,
+%\begin{eqnarray*}
+%\beta=-\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(h\right)+\Phi^{-1}\left(f\right)\right]\textrm{.}
+%\end{eqnarray*}
+
+%Under the modified 2AFC model, the subject could be said to be unbiased if the yardstick was centered on the first observation. The degree of asymmetry in the placement of the yardstick, $\zeta$, is therefore an appropriate measure of bias. To calculate this measure, $\zeta$, we require the conditional probability $P\left\{Z=1\mid{}W=0\right\}$, denoted $g$, which is given by
+%\begin{eqnarray*}
+%P\left\{Z=1\mid{}W=0,\Psi_0=x\right\}&=&\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\\
+%P\left\{Z=1\mid{}W=0\right\}=g&=&\int\!\left[\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\right]\phi\left(x\right)\textrm{d}x\\
+%&=&??
+%\end{eqnarray*}Therefore, the maximum-likelihood estimate of $\zeta$ is given by
+%\begin{eqnarray}
+%\end{eqnarray}The model allows a third psychologically meaningful measure to be calculated from the data. The distance between the two criteria, denoted $u$, represents the degree of uncertainty or ambivalence within the decision process. We therefore refer to it as the ``index of uncertainty.'' This measure can be estimated from the data using the equation
+%\begin{eqnarray}
+%\hat{u}&=&\Phi^{-1}\left(\hat{f}+\hat{g}\right)-\Phi^{-1}\left(\hat{f}\right)\textrm{.}
+%\end{eqnarray}
+
+
+\appendix
+\label{app:a}
+\section{Python code for verification of the regular YN model}
+\lstinputlisting{simulate_yn_regular.py}
+\appendix
+\label{app:b}
+\section{Python code for verification of the modified YN model}
+\lstinputlisting{simulate_yn_modified.py}
+\appendix
+\label{app:c}
+\section{Python code for verification of the regular 2AFC model}
+\lstinputlisting{simulate_2afc_regular.py}
 
 \end{document}

@@ -104,6 +104,27 @@
       \verb http://dx.doi.org/10.1016/j.jmp.2012.02.004
       \endverb
     \endentry
+    \entry{decarlosignal2013}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=aae648603cab5e9331b97fdc34befd3e}{{DeCarlo}}{D\bibinitperiod}{Lawrence\bibnamedelima T.}{L\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{aae648603cab5e9331b97fdc34befd3e}
+      \strng{fullhash}{aae648603cab5e9331b97fdc34befd3e}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Signal detection models for the same--different task}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1016/j.jmp.2013.02.002
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.jmp.2013.02.002
+      \endverb
+    \endentry
     \entry{Green1966}{book}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=85a3ad79329f42b095a2164f9b3ff617}{Green}{G\bibinitperiod}{D.\bibnamedelimi M.}{D\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
@@ -168,9 +189,9 @@
       \field{datelabelsource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Deficits in facial emotion recognition in Parkinson\x{fffd}\x{fffd}\x{fffd}s disease {(PD)} patients has been well documented. Nevertheless, it is still not clear whether facial emotion recognition deficits are secondary to other cognitive impairments. The aim of this study was to answer the question of whether deficits in facial emotion recognition in {PD} result from impaired sensory processes, or from impaired decision processes. To address this question, we tested the ability to recognize a mixture of basic and complex emotions in 38 non-demented {PD} patients and 38 healthy controls matched on demographic characteristics. By using a task with an increased level of ambiguity, in conjunction with the signal detection theory, we were able to differentiate between sensitivity and response bias in facial emotion recognition. Sensitivity and response bias for facial emotion recognition were calculated using a d-prime value and a c index respectively. Our study is the first to employ the {EIS-F} scale for assessing facial emotion recognition among {PD} patients; to test its validity as an assessment tool, a group comprising schizophrenia patients and healthy controls were also tested. Patients with {PD} recognized emotions with less accuracy than healthy individuals (d-prime) and used a more liberal response criterion (c index). By contrast, patients with schizophrenia merely showed diminished sensitivity (d-prime). Our results suggest that an impaired ability to recognize facial emotions in {PD} patients may result from both decreased sensitivity and a significantly more liberal response criteria, whereas facial emotion recognition in schizophrenia may stem from a generalized sensory impairment only.}
+      \field{abstract}{Deficits in facial emotion recognition in Parkinson's disease {(PD)} patients has been well documented. Nevertheless, it is still not clear whether facial emotion recognition deficits are secondary to other cognitive impairments. The aim of this study was to answer the question of whether deficits in facial emotion recognition in {PD} result from impaired sensory processes, or from impaired decision processes. To address this question, we tested the ability to recognize a mixture of basic and complex emotions in 38 non-demented {PD} patients and 38 healthy controls matched on demographic characteristics. By using a task with an increased level of ambiguity, in conjunction with the signal detection theory, we were able to differentiate between sensitivity and response bias in facial emotion recognition. Sensitivity and response bias for facial emotion recognition were calculated using a d-prime value and a c index respectively. Our study is the first to employ the {EIS-F} scale for assessing facial emotion recognition among {PD} patients; to test its validity as an assessment tool, a group comprising schizophrenia patients and healthy controls were also tested. Patients with {PD} recognized emotions with less accuracy than healthy individuals (d-prime) and used a more liberal response criterion (c index). By contrast, patients with schizophrenia merely showed diminished sensitivity (d-prime). Our results suggest that an impaired ability to recognize facial emotions in {PD} patients may result from both decreased sensitivity and a significantly more liberal response criteria, whereas facial emotion recognition in schizophrenia may stem from a generalized sensory impairment only.}
       \field{journaltitle}{Frontiers in Psychology}
-      \field{title}{Emotional processing in Parkinson\x{fffd}\x{fffd}\x{fffd}s disease and schizophrenia: evidence for response bias deficits in {PD}}
+      \field{title}{Emotional processing in Parkinson's disease and schizophrenia: evidence for response bias deficits in {PD}}
       \field{volume}{6}
       \field{year}{2015}
       \verb{doi}
