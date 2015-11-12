@@ -171,9 +171,9 @@ The maximum-likelihood estimate of $d$ under the regular 2AFC model is therefore
 \subsection{Modified 2AFC model}
 Ambivalent or missing responses in 2AFC experiments can be accomodated using a ``yardstick'' heuristic \parencite{decarlosignal2013}. As under the regular 2AFC model, the subject makes two observations per trial, and chooses whichever stimulus has the largest corresponding observation (after taking into account bias). However, under the modified model, the subject also places a yardstick around $\Psi_0$, and makes an affirmative response only if $\Psi_1$ falls beyond the endpoints of the yardstick. Let $Z$ denote the subject's response. When $Z=0$, the subject chooses the first stimulus. When $Z=1$, the subject responds ambivalently (``I don't know''), or does not respond at all. When $Z=2$, the subject chooses the second stimulus. The decision rule is
 \begin{eqnarray*}
-&Z=0\textrm{ if }&\Psi_0-\alpha>\Psi_1\textrm{,}\\
+&Z=0\textrm{ if }&\Psi_0+\alpha>\Psi_1\textrm{,}\\
 &Z=1\textrm{ if }&\left\{ \begin{array}{cl}
-\Psi_0-\alpha{}\le\Psi_1\\
+\Psi_0+\alpha{}\le\Psi_1\\
 \textrm{and}\\
 \Psi_0+\beta>\Psi_1
        \end{array} \right.\\
@@ -188,7 +188,7 @@ The bottom-right panel shows a trial where $W=1$. The green shaded region $h$ is
 P\left\{Z=2\mid{}W=1\right\}=h=\Phi\left(\frac{d-\beta}{\sqrt{2}}\right)\textrm{.}
 \end{eqnarray*}Combining and rearranging these equations reveals that the maximum-likelihood estimate of $d$ under the modified 2AFC model is given by the same equation as under the regular 2AFC model (Eq.~5).
 
-Under the modified 2AFC model, the subject could be said to be unbiased if the middle of the yardstick was always equal to the value of first observation, $\Psi_0$. The distance from the middle of the yardstick is given by $x + \frac{1}{2}\left(\beta-\alpha\right)$, where $x$ is an instance of $\Psi_0$. Therefore, an appropriate measure of bias is this quantity minus $x$, or
+Under the modified 2AFC model, the subject could be said to be unbiased if the middle of the yardstick was always equal to the value of first observation. Therefore, an appropriate measure of bias is the distance from $x$, where $x$ is an instance of $\Psi_0$, to the middle of the yardstick, or
 \begin{eqnarray*}
 \zeta=\frac{1}{2}\left(\beta-\alpha\right)\textrm{.}
 \end{eqnarray*}
@@ -199,49 +199,40 @@ Since $\beta$ is just $l$ from the regular 2AFC model, it can be expressed uniqu
 By contrast, $\alpha$ requires an additional conditional probability, $P\left\{Z=1\mid{}W=0\right\}$ (denoted $g$ for convenience) which is given by
 \begin{eqnarray*}
 P\left\{Z=1\mid{}W=0,\Psi_0=x\right\}&=&\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\\
+P\left\{Z=1\mid{}W=0\right\}=g&=&\int\!\left[\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\right]\phi\left(x\right)\textrm{d}x\\
+&=&\Phi\left(\frac{\beta}{\sqrt{2}}\right)-\Phi\left(\frac{-\alpha}{\sqrt{2}}\right)\textrm{.}
 %P\left\{Z=2\mid{}W=1\right\}=h=\Phi\left(\frac{d-\beta}{\sqrt{2}}\right)\textrm{.}
 \end{eqnarray*}
-%degree of asymmetry in the placement of the yardstick, $\zeta$, is therefore an appropriate measure of bias. The midpoint of the yardstick 
-
-% To calculate this measure, $\zeta$, we require the conditional probability $P\left\{Z=1\mid{}W=0\right\}$, denoted $g$, which is given by
-
-
-
-
-
-
-
+Combining the above equations, re-arranging, and simplifying yields the maximum-likelihood estimator for $\zeta$:
+\begin{eqnarray}
+\hat{\zeta}&=&-\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(\hat{f}+\hat{g}\right)+\Phi^{-1}\left(\hat{h}\right)\right]\textrm{.}
+\end{eqnarray}
+Finally, an appropriate measure of uncertainty or ambivalence under this model is the width of the yardstick, denoted $\tau$, which is simply $\alpha+\beta$. The equation that yields its maximum-likelihood estimate is
+\begin{eqnarray}
+\hat{\tau}&=&\sqrt{2}\left[\Phi^{-1}\left(\hat{f}+\hat{g}\right)-\Phi^{-1}\left(\hat{f}\right)\right]\textrm{.}
+\end{eqnarray}Verification of the model via Python code is provided in Appendix D.
 
 
-%To measure bias under this model, we must first find equations for $\alpha$ and $\beta$. Since $\beta$ is the same as $l$ under the regular 2AFC model,
-%\begin{eqnarray*}
-%\beta=-\frac{1}{\sqrt{2}}\left[\Phi^{-1}\left(h\right)+\Phi^{-1}\left(f\right)\right]\textrm{.}
-%\end{eqnarray*}
+\section{Parameter recovery study}
 
-%Under the modified 2AFC model, the subject could be said to be unbiased if the yardstick was centered on the first observation. The degree of asymmetry in the placement of the yardstick, $\zeta$, is therefore an appropriate measure of bias. To calculate this measure, $\zeta$, we require the conditional probability $P\left\{Z=1\mid{}W=0\right\}$, denoted $g$, which is given by
-%\begin{eqnarray*}
-%P\left\{Z=1\mid{}W=0,\Psi_0=x\right\}&=&\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\\
-%P\left\{Z=1\mid{}W=0\right\}=g&=&\int\!\left[\Phi\left(x+\beta\right)-\Phi\left(x-\alpha\right)\right]\phi\left(x\right)\textrm{d}x\\
-%&=&??
-%\end{eqnarray*}Therefore, the maximum-likelihood estimate of $\zeta$ is given by
-%\begin{eqnarray}
-%\end{eqnarray}The model allows a third psychologically meaningful measure to be calculated from the data. The distance between the two criteria, denoted $u$, represents the degree of uncertainty or ambivalence within the decision process. We therefore refer to it as the ``index of uncertainty.'' This measure can be estimated from the data using the equation
-%\begin{eqnarray}
-%\hat{u}&=&\Phi^{-1}\left(\hat{f}+\hat{g}\right)-\Phi^{-1}\left(\hat{f}\right)\textrm{.}
-%\end{eqnarray}
+In this section, we compare the efficiency of the modified models. By ``efficiency,'' we mean the ability to recover the models original parameters from simulated data sets.
 
 
 \appendix
 \label{app:a}
-\section{Python code for verification of the regular YN model}
+\section{Regular YN model}
 \lstinputlisting{simulate_yn_regular.py}
 \appendix
 \label{app:b}
-\section{Python code for verification of the modified YN model}
+\section{Modified YN model}
 \lstinputlisting{simulate_yn_modified.py}
 \appendix
 \label{app:c}
-\section{Python code for verification of the regular 2AFC model}
+\section{Regular 2AFC model}
 \lstinputlisting{simulate_2afc_regular.py}
+\appendix
+\label{app:c}
+\section{Modified 2AFC model}
+\lstinputlisting{simulate_2afc_modified.py}
 
 \end{document}

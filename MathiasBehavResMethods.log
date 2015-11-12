@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 NOV 2015 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 NOV 2015 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -507,7 +507,7 @@ File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 
 (./MathiasBehavResMethods.aux
 
-LaTeX Warning: Label `app:b' multiply defined.
+LaTeX Warning: Label `app:c' multiply defined.
 
 )
 \openout1 = `MathiasBehavResMethods.aux'.
@@ -678,13 +678,13 @@ LaTeX Warning: Reference `fig:Figure1' on page 6 undefined on input line 76.
 LaTeX Warning: Reference `fig:Figure1' on page 7 undefined on input line 105.
 
 [7] [8] [9] [10] [11] [12] [13]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 237.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 223.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 237.
+(Font)              scaled to size 10.79993pt on input line 223.
 
 (./simulate_yn_regular.py
 LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <12> not available
@@ -754,7 +754,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32])
-AED endfloat: Processing end Figures and Tables [33]
+[33] (./simulate_2afc_modified.py
+Underfull \vbox (badness 4846) has occurred while \output is active []
+
+ [34
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40])
+AED endfloat: Processing end Figures and Tables [41]
 (./MathiasBehavResMethods.aux)
 
 LaTeX Warning: There were undefined references.
@@ -767,10 +791,10 @@ Package logreq Info: Writing requests to 'MathiasBehavResMethods.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11347 strings out of 493089
- 186312 string characters out of 6134842
- 641160 words of memory out of 5000000
- 14645 multiletter control sequences out of 15000+600000
+ 11362 strings out of 493089
+ 186542 string characters out of 6134842
+ 641169 words of memory out of 5000000
+ 14657 multiletter control sequences out of 15000+600000
  68577 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,13n,59p,2270b,1706s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -793,10 +817,10 @@ exmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/lm/lmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm
 /lmsy8.pfb>
-Output written on MathiasBehavResMethods.pdf (33 pages, 237705 bytes).
+Output written on MathiasBehavResMethods.pdf (41 pages, 247268 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 210 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

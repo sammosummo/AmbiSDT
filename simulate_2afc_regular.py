@@ -36,12 +36,6 @@ def sim_regular_2afc(d, l, n0, n1=None):
         Count of observed false alarms.
     h : int
         Count of observed hits.
-    g : int
-        Count of observed type 1 ambivalent
-        responses.
-    j : int
-        Count of observed type 2 ambivalent
-        responses.
     m : int
         Count of observed misses.
     r : int
