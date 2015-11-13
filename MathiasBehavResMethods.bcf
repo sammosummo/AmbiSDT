@@ -2393,10 +2393,10 @@
     <bcf:citekey order="1">Macmillan2005</bcf:citekey>
     <bcf:citekey order="2">laskowskaemotional2015</bcf:citekey>
     <bcf:citekey order="3">kreitewolfhemispheric2014</bcf:citekey>
-    <bcf:citekey order="4">laskowskaemotional2015</bcf:citekey>
-    <bcf:citekey order="4">kreitewolfhemispheric2014</bcf:citekey>
-    <bcf:citekey order="5">Peterson1954</bcf:citekey>
-    <bcf:citekey order="5">Tanner1954</bcf:citekey>
+    <bcf:citekey order="4">Peterson1954</bcf:citekey>
+    <bcf:citekey order="4">Tanner1954</bcf:citekey>
+    <bcf:citekey order="5">Green1966</bcf:citekey>
+    <bcf:citekey order="5">Macmillan2005</bcf:citekey>
     <bcf:citekey order="6">Green1966</bcf:citekey>
     <bcf:citekey order="6">Macmillan2005</bcf:citekey>
     <bcf:citekey order="7">Wixted2007</bcf:citekey>
@@ -2410,5 +2410,6 @@
     <bcf:citekey order="13">Macmillan2005</bcf:citekey>
     <bcf:citekey order="14">decarlosignal2013</bcf:citekey>
     <bcf:citekey order="15">decarlosignal2013</bcf:citekey>
+    <bcf:citekey order="16">kreitewolfhemispheric2014</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
