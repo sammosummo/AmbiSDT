@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 NOV 2015 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 NOV 2015 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -496,12 +496,22 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
+Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
+Package biblatex Info: ... file 'english-apa.lbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
+File: english-apa.lbx 2015/01/23 v6.7 APA biblatex localisation
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
-)
+)))
 \@quotelevel=\count270
 \@quotereset=\count271
 
@@ -613,22 +623,13 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'MathiasBehavResMethods.bbl' found.
 
-(./MathiasBehavResMethods.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                decarlosignal2013
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(./MathiasBehavResMethods.bbl)
 Package biblatex Info: Reference section=0 on input line 48.
 Package biblatex Info: Reference segment=0 on input line 48.
 \c@lstlisting=\count278
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-[2] [3]
+] [2] [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
@@ -666,22 +667,33 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 68.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 68.
+
+Underfull \vbox (badness 1838) has occurred while \output is active []
+
  [5]
+\openout4 = `MathiasBehavResMethods.fff'.
 
-LaTeX Warning: Reference `fig:Figure1' on page 6 undefined on input line 76.
 
-[6]
+(MathiasBehavResMethods.fff) [6] [7] [8] [9] [10] [11] [12] [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:Figure1' on page 7 undefined on input line 106.
+ [14]
+[15] [16] [17] (./MathiasBehavResMethods.fff
+<fig1.pdf, id=71, 578.16pt x 397.485pt>
+File: fig1.pdf Graphic file (type pdf)
+ <use fig1.pdf>
+Package pdftex.def Info: fig1.pdf used on input line 4.
+(pdftex.def)             Requested size: 469.75502pt x 322.95576pt.
+ [18
 
-[7] [8] [9] [10] [11] [12] [13] [14]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 226.
+ <./fig1.pdf>])
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 230.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 226.
+(Font)              scaled to size 10.79993pt on input line 230.
 
 (./simulate_yn_modified.py
 LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <12> not available
@@ -691,65 +703,63 @@ LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
 
 Underfull \vbox (badness 4846) has occurred while \output is active []
 
- [15
+ [19
+
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21])
-[22] (./simulate_2afc_modified.py
-Underfull \vbox (badness 4846) has occurred while \output is active []
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [25])
+[26] (./simulate_2afc_modified.py
+Underfull \vbox (badness 4846) has occurred while \output is active []
 
- [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [27
 
- [27]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29])
-AED endfloat: Processing end Figures and Tables [30]
+ [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33])
+AED endfloat: Processing end Figures and Tables [34]
 (./MathiasBehavResMethods.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'MathiasBehavResMethods.run.xml'.
 \openout1 = `MathiasBehavResMethods.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11345 strings out of 493089
- 186241 string characters out of 6134842
- 641135 words of memory out of 5000000
- 14646 multiletter control sequences out of 15000+600000
+ 11454 strings out of 493089
+ 188361 string characters out of 6134842
+ 657111 words of memory out of 5000000
+ 14745 multiletter control sequences out of 15000+600000
  68577 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,13n,57p,2270b,1704s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -772,10 +782,10 @@ exmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/lm/lmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm
 /lmsy8.pfb>
-Output written on MathiasBehavResMethods.pdf (30 pages, 232242 bytes).
+Output written on MathiasBehavResMethods.pdf (34 pages, 630198 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 264 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

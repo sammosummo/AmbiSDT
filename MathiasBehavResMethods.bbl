@@ -39,8 +39,8 @@
       \field{title}{Separating decision and encoding noise in signal detection tasks.}
       \field{volume}{122}
       \field{year}{2015}
-      \field{pages}{429}
-      \range{pages}{1}
+      \field{pages}{429\bibrangedash 460}
+      \range{pages}{32}
       \verb{doi}
       \verb 10.1037/a0039348
       \endverb
@@ -66,8 +66,8 @@
       \field{title}{Signal detection theory with finite mixture distributions: Theoretical developments with applications to recognition memory.}
       \field{volume}{109}
       \field{year}{2002}
-      \field{pages}{710}
-      \range{pages}{1}
+      \field{pages}{710\bibrangedash 721}
+      \range{pages}{12}
       \verb{doi}
       \verb 10.1037/0033-295X.109.4.710
       \endverb
@@ -92,11 +92,11 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Mathematical Psychology}
       \field{number}{3}
-      \field{title}{On a signal detection approach to -alternative forced choice with bias, with maximum likelihood and Bayesian approaches to estimation}
+      \field{title}{On a signal detection approach to m-alternative forced choice with bias, with maximum likelihood and Bayesian approaches to estimation}
       \field{volume}{56}
       \field{year}{2012}
-      \field{pages}{196207}
-      \range{pages}{1}
+      \field{pages}{196\bibrangedash 207}
+      \range{pages}{12}
       \verb{doi}
       \verb 10.1016/j.jmp.2012.02.004
       \endverb
@@ -116,13 +116,41 @@
       \field{datelabelsource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Psychology}
+      \field{number}{1--2}
       \field{title}{Signal detection models for the same--different task}
+      \field{volume}{57}
       \field{year}{2013}
+      \field{pages}{43\bibrangedash 51}
+      \range{pages}{9}
       \verb{doi}
       \verb 10.1016/j.jmp.2013.02.002
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1016/j.jmp.2013.02.002
+      \endverb
+    \endentry
+    \entry{goldhow2013}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=452d9b95da0510efa44729514ea49032}{Gold}{G\bibinitperiod}{Joshua\bibnamedelima I}{J\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=651057a504f7b843f8dd606891e3771e}{Ding}{D\bibinitperiod}{Long}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e1c37bb5c4829adf466665d9d1a6f524}
+      \strng{fullhash}{e1c37bb5c4829adf466665d9d1a6f524}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Neurobiology}
+      \field{title}{How mechanisms of perceptual decision-making affect the psychometric function}
+      \field{volume}{103}
+      \field{year}{2013}
+      \field{pages}{98\bibrangedash 114}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.pneurobio.2012.05.008
       \endverb
     \endentry
     \entry{Green1966}{book}{}
@@ -162,7 +190,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Hemispheric specialization for linguistic prosody is a controversial issue. While it is commonly assumed that linguistic prosody and emotional prosody are preferentially processed in the right hemisphere, neuropsychological work directly comparing processes of linguistic prosody and emotional prosody suggests a predominant role of the left hemisphere for linguistic prosody processing. Here, we used two functional magnetic resonance imaging {(fMRI)} experiments to clarify the role of left and right hemispheres in the neural processing of linguistic prosody. In the first experiment, we sought to confirm previous findings showing that linguistic prosody processing compared to other speech-related processes predominantly involves the right hemisphere. Unlike previous studies, we controlled for stimulus influences by employing a prosody and speech task using the same speech material. The second experiment was designed to investigate whether a left-hemispheric involvement in linguistic prosody processing is specific to contrasts between linguistic prosody and emotional prosody or whether it also occurs when linguistic prosody is contrasted against other non-linguistic processes (i.e., speaker recognition). Prosody and speaker tasks were performed on the same stimulus material. In both experiments, linguistic prosody processing was associated with activity in temporal, frontal, parietal and cerebellar regions. Activation in temporo-frontal regions showed differential lateralization depending on whether the control task required recognition of speech or speaker: recognition of linguistic prosody predominantly involved right temporo-frontal areas when it was contrasted against speech recognition; when contrasted against speaker recognition, recognition of linguistic prosody predominantly involved left temporo-frontal areas. The results show that linguistic prosody processing involves functions of both hemispheres and suggest that recognition of linguistic prosody is based on an inter-hemispheric mechanism which exploits both a right-hemispheric sensitivity to pitch information and a left-hemispheric dominance in speech processing.}
-      \field{journaltitle}{{NeuroImage}}
+      \field{journaltitle}{Neuro{I}mage}
       \field{title}{Hemispheric lateralization of linguistic prosody recognition in comparison to speech and speaker recognition.}
       \field{volume}{102 Pt 2}
       \field{year}{2014}
@@ -194,6 +222,8 @@
       \field{title}{Emotional processing in Parkinson's disease and schizophrenia: evidence for response bias deficits in {PD}}
       \field{volume}{6}
       \field{year}{2015}
+      \field{pages}{1417}
+      \range{pages}{1}
       \verb{doi}
       \verb 10.3389/fpsyg.2015.01417
       \endverb
@@ -244,6 +274,36 @@
       \field{pages}{171\bibrangedash 212}
       \range{pages}{42}
     \endentry
+    \entry{ratcliffthe2008}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=f8f3e25ff3eca44052e7ea8417d818b2}{Ratcliff}{R\bibinitperiod}{Roger}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9a02326166ea7d66006c04a4c8361cfc}{Mc{K}oon}{M\bibinitperiod}{Gail}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {{MIT} Press}%
+      }
+      \strng{namehash}{fa3bb2719f0d5b83371a3725c7035409}
+      \strng{fullhash}{fa3bb2719f0d5b83371a3725c7035409}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computation}
+      \field{number}{4}
+      \field{title}{The diffusion decision model: theory and data for two-choice decision tasks}
+      \field{volume}{20}
+      \field{year}{2008}
+      \field{pages}{873\bibrangedash 922}
+      \range{pages}{50}
+      \verb{doi}
+      \verb 10.1162/neco.2008.12-06-420
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1162/neco.2008.12-06-420
+      \endverb
+    \endentry
     \entry{Tanner1954}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=57cdae7aefe6cb89ede28724f79c8d2c}{Tanner}{T\bibinitperiod}{Jr.}{J\bibinitperiod}{}{}{W.\bibnamedelimi P.}{W\bibinitperiod\bibinitdelim P\bibinitperiod}}%
@@ -258,11 +318,15 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Psychological Review}
+      \field{number}{6}
       \field{title}{A decision-making theory of visual detection}
       \field{volume}{61}
       \field{year}{1954}
       \field{pages}{401\bibrangedash 406}
       \range{pages}{6}
+      \verb{doi}
+      \verb 10.1037/h0058700
+      \endverb
     \endentry
     \entry{Wixted2007}{article}{}
       \name{author}{1}{}{%
@@ -277,11 +341,15 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Psychological Review}
+      \field{number}{1}
       \field{title}{Dual-Process Theory and Signal-Detection Theory of Recognition Memory.}
       \field{volume}{114}
       \field{year}{2007}
       \field{pages}{152\bibrangedash 176}
       \range{pages}{25}
+      \verb{doi}
+      \verb 10.1037/0033-295X.114.1.152
+      \endverb
     \endentry
     \entry{Yonelinas2007}{article}{}
       \name{author}{2}{}{%
@@ -297,14 +365,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Psychological Bulletin}
+      \field{number}{5}
       \field{title}{Receiver operating characteristics ({ROC}s) in recognition memory: {A} review}
       \field{volume}{113}
       \field{year}{2007}
       \field{pages}{800\bibrangedash 832}
       \range{pages}{33}
+      \verb{doi}
+      \verb 10.1037/0033-2909.133.5.800
+      \endverb
     \endentry
   \endsortlist
-  \missing{decarlosignal2013}
 \endrefsection
 \endinput
 
