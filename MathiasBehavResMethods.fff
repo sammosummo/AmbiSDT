@@ -7,3 +7,12 @@
 \end{figure*}
 \efloatseparator
  
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\includegraphics[width=1\textwidth]{fig2.pdf}
+\caption{Illustrations of the regular 2AFC model (top panels) and the modified 2AFC model (bottom panels). The two curves in each panel represent the probability distributions of the observations from the two stimuli per trial. The panels show different example trials, where the first stimulus was drawn from the second class (left panels) and where the first stimulus was drawn from the first class (right panels). Under the regular model, $d$ is a measure of sensitivity and $l$ is a measure of bias. Both of these measures can be expressed uniquely in terms of the false-alarm and hit probabilities ($f$ and $h$, respectively). Under the modified model, $d$ is again an appropriate measure of sensitivity, and $\zeta$ is an appropriate measure of bias, which requires the additional probability $g$ to be estimated from the data. The ``yardstick,'' denoted $\tau$, represents uncertainty or ambivalence in the decision process.}
+\label{fig:Figure2}
+\end{figure*}
+\efloatseparator
+ 
