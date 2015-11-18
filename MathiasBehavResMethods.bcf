@@ -2397,22 +2397,25 @@
     <bcf:citekey order="4">Tanner1954</bcf:citekey>
     <bcf:citekey order="5">Green1966</bcf:citekey>
     <bcf:citekey order="5">Macmillan2005</bcf:citekey>
-    <bcf:citekey order="6">Green1966</bcf:citekey>
-    <bcf:citekey order="6">Macmillan2005</bcf:citekey>
-    <bcf:citekey order="7">Wixted2007</bcf:citekey>
-    <bcf:citekey order="7">Yonelinas2007</bcf:citekey>
-    <bcf:citekey order="8">decarlosignal2002</bcf:citekey>
-    <bcf:citekey order="9">cabreraseparating2015</bcf:citekey>
-    <bcf:citekey order="10">decarloon2012</bcf:citekey>
-    <bcf:citekey order="11">decarloon2012</bcf:citekey>
-    <bcf:citekey order="12">Green1966</bcf:citekey>
-    <bcf:citekey order="12">Macmillan2005</bcf:citekey>
-    <bcf:citekey order="13">Macmillan2005</bcf:citekey>
-    <bcf:citekey order="14">decarlosignal2013</bcf:citekey>
-    <bcf:citekey order="15">decarlosignal2013</bcf:citekey>
-    <bcf:citekey order="16">kreitewolfhemispheric2014</bcf:citekey>
-    <bcf:citekey order="17">ratcliffthe2008</bcf:citekey>
-    <bcf:citekey order="18">goldhow2013</bcf:citekey>
+    <bcf:citekey order="6">Wixted2007</bcf:citekey>
+    <bcf:citekey order="7">Green1966</bcf:citekey>
+    <bcf:citekey order="7">Macmillan2005</bcf:citekey>
+    <bcf:citekey order="8">Wixted2007</bcf:citekey>
+    <bcf:citekey order="8">Yonelinas2007</bcf:citekey>
+    <bcf:citekey order="9">decarlosignal2002</bcf:citekey>
+    <bcf:citekey order="10">cabreraseparating2015</bcf:citekey>
+    <bcf:citekey order="11">Macmillan2005</bcf:citekey>
+    <bcf:citekey order="12">decarloon2012</bcf:citekey>
+    <bcf:citekey order="13">decarloon2012</bcf:citekey>
+    <bcf:citekey order="14">decarloon2012</bcf:citekey>
+    <bcf:citekey order="15">Green1966</bcf:citekey>
+    <bcf:citekey order="15">Macmillan2005</bcf:citekey>
+    <bcf:citekey order="16">Macmillan2005</bcf:citekey>
+    <bcf:citekey order="17">decarlosignal2013</bcf:citekey>
+    <bcf:citekey order="18">decarlosignal2013</bcf:citekey>
+    <bcf:citekey order="19">kreitewolfhemispheric2014</bcf:citekey>
+    <bcf:citekey order="20">ratcliffthe2008</bcf:citekey>
+    <bcf:citekey order="21">goldhow2013</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 NOV 2015 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 NOV 2015 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -662,20 +662,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 68.
+(Font)              <10> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 68.
+(Font)              <7> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 68.
+(Font)              <5> on input line 67.
  [5]
 \openout4 = `MathiasBehavResMethods.fff'.
 
 
-(MathiasBehavResMethods.fff) [6] [7] [8] [9] [10] [11] [12] [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-[15] [16] [17] (./MathiasBehavResMethods.fff
+(MathiasBehavResMethods.fff) [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+[16] [17] (./MathiasBehavResMethods.fff
 <fig1.pdf, id=71, 546.33983pt x 175.95024pt>
 File: fig1.pdf Graphic file (type pdf)
  <use fig1.pdf>
@@ -692,13 +689,13 @@ Package pdftex.def Info: fig2.pdf used on input line 13.
  [19
 
  <./fig2.pdf>])
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 241.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 242.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 241.
+(Font)              scaled to size 10.79993pt on input line 242.
 
 (./simulate_yn_modified.py
 LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <12> not available
@@ -761,10 +758,10 @@ Package logreq Info: Writing requests to 'MathiasBehavResMethods.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11460 strings out of 493089
- 188433 string characters out of 6134842
- 657120 words of memory out of 5000000
- 14750 multiletter control sequences out of 15000+600000
+ 11463 strings out of 493089
+ 188468 string characters out of 6134842
+ 657028 words of memory out of 5000000
+ 14753 multiletter control sequences out of 15000+600000
  68577 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,13n,57p,2270b,1706s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -787,7 +784,7 @@ exmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/lm/lmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm
 /lmsy8.pfb>
-Output written on MathiasBehavResMethods.pdf (35 pages, 947278 bytes).
+Output written on MathiasBehavResMethods.pdf (35 pages, 951966 bytes).
 PDF statistics:
  384 PDF objects out of 1000 (max. 8388607)
  265 compressed objects within 3 object streams
